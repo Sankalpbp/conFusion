@@ -10,6 +10,7 @@
     min-height: 400px;
 }
 
+
 .footer {
     background-color: #D1C4E9;
     margin: 0px auto;
@@ -27,4 +28,9 @@
     font-size: 80%;
     margin: 0px;    
     color: #0f0f0f0f;
+}
+
+/* for aboutus.html */
+.spacing {
+    padding: 80px 30px 80px 30px;
 }
