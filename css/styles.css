@@ -43,3 +43,12 @@ body {
 .navbar-dark {
     background-color: #512DA8;
 }
+
+.cardColor {
+    background-color: #ffbb00;
+}
+
+.margin {
+    margin-left: auto;
+    margin-right: auto;
+}
