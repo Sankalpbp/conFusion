@@ -74,3 +74,11 @@ body{
     bottom: 0px;
     z-index: 1;
 }
+
+.ModalBody {
+    background-color: $background-pale;
+}
+
+.ModalHead {
+    background-color: $background-dark;
+}

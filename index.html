@@ -35,7 +35,7 @@
                 </ul>
 
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <a id="loginButton">
                     <span class="fa fa-sign-in"></span> Login</a>
                 </span>
             </div>
@@ -46,11 +46,11 @@
         <div class="modal-dialog modal-lg" role="content">
             <!-- Modal content-->
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header text-white ModalHead">
                     <h4 class="modal-title">Login </h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close ModalBody" data-dismiss="modal">&times;</button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body ModalBody">
                     <form>
                         <div class="form-row">
                             <div class="form-group col-sm-4">
@@ -83,11 +83,11 @@
         <div class="modal-dialog modal-lg" role="content">
             <!-- Modal content-->
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header ModalHead text-white">
                     <h4 class="modal-title">Reserve Table </h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close ModalBody" data-dismiss="modal">&times;</button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body ModalBody">
                     <form>
                         <div class="form-group row">
 
@@ -173,7 +173,7 @@
                 </div>
                 <div class="col-12 col-sm-3 align-self-center btn btn-block btn-warning text-white">
                     <span class="navbar-text">
-                        <a data-toggle="modal" data-target="#reserveForm">
+                        <a id="reserveButton">
                         <span></span> Reserve Table</a>
                     </span>
                 </div>
@@ -297,10 +297,11 @@
                 </div>
             </div>
         </div>
+    </div>
         
     <footer class="footer">
         <div class="container">
-            <div class="row">             
+            <div class="row">
                 <div class="col-4 offset-1 col-sm-2">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
@@ -344,20 +345,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        $("#carouselButton").click(function(){
-            if ($("#carouselButton").children("span").hasClass('fa-pause')) {
-                $("#mycarousel").carousel('pause');
-                $("#carouselButton").children("span").removeClass('fa-pause');
-                $("#carouselButton").children("span").addClass('fa-play');
-            }
-            else if ($("#carouselButton").children("span").hasClass('fa-play')){
-                $("#mycarousel").carousel('cycle');
-                $("#carouselButton").children("span").removeClass('fa-play');
-                $("#carouselButton").children("span").addClass('fa-pause');                    
-            }
-        });
-    </script>
+    <script src="./js/scripts.js"></script>
 
 </body>
 
